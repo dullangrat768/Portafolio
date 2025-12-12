@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Menu de navegacion</title>
+
+<nav>
+  <ul>
+    <li><a href="#inicio">Inicio</a></li>
+    <li><a href="#servicios">Servicios</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+</nav>
+<h3> TOP 5 tecnologias WEB</h3>
+<ol>
+  <li><strong>HTML5:</strong> La base para estructurar contenido web</li> 
+  <li><strong>CSS:</strong> se encarga de dar estilo a las páginas web</li>
+  <li><strong>JavaScript:</strong> Permite agregar funcionalidades dinámicas a sitios web</li>
+  <li><strong>Python:</strong> Python se usa para manejar la transferencia de datos, la interacción con bases de datos</li>
+  <li><strong>NodeJS:</strong> permite ejecutar código JavaScript en el lado del servidor</li>
+</ol>
+
+<table border>
+  <tr>
+    <td colspan="2">Nombre Curso</td>
+    <td colspan="2">Duracion</td>
+    <td colspan="2">nivel</td>
+    <td colspan="2">Precio</td>
+  </tr>
+  <tr>
+    
+    
+  </tr>
+<tr>
+  <td colspan="2">Diseño Web</td>
+  <td colspan="2">5H</td>
+  <td colspan="2">Basico</td>
+  <td colspan="2">$100</td>
+</tr>
+<tr>
+  <td colspan="2">Bases De Datos</td>
+  <td colspan="2">7H</td>
+  <td colspan="2">Intermedio</td>
+  <td colspan="2">$200</td>
+</tr>
+<tr>
+  <td colspan="2">programacion orientada a objetos</td>
+  <td colspan="2">6H</td>
+  <td colspan="2">Intermedio</td>
+  <td colspan="2">$150</td>
+</tr>
+<tr>
+  <td colspan="2">Analisis de datos</td>
+  <td colspan="2">4H</td>
+  <td colspan="2">Intermedio</td>
+  <td colspan="2">$180</td>
+</tr>
+<tr>
+  <td colspan="2">Estructura de datos</td>
+  <td colspan="2">9H</td>
+  <td colspan="2">Avanzado</td>
+  <td colspan="2">$400</td>
+</tr>
+</table>
+<br>
+<form action="/submit" method="post">
+  <label for="name">Nombre:</label>
+  <input type="text" id="name" name="name" required>
+  <input type="text"
+         required
+	 minlength="3"
+	 maxlength="20"
+	 pattern="[A-Za-z]+"
+	 title="Solo letras, 3-20 caracteres">
+
+  <input type="number"
+	 min="1"
+	 max="100"
+	 step="5">
+
+  <input type="email"
+	 required
+	   placeholder="usuario@ejemplo.com">
+
+<label for="email">Email *</label>
+<input type="email"
+	id="email"
+	name="email"
+	required
+	aria-required="true"
+	aria-describedby="email-error">
+<div id="email-error" class="error-message">
+  Ingresa un email valido
+</div>
+
+
+  <button type="submit">Enviar</button>
+</form>

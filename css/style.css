@@ -438,3 +438,52 @@ nav ul li a:hover {
 .whatsapp-icon:hover {
   opacity: 1; /* Aumenta opacidad al pasar el ratón */
 }
+
+/* =========================================
+   EJEMPLOS DE WEBS
+========================================= */
+
+.examples-grid {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column; /* Apila los botones verticalmente */
+  gap: 15px;
+  max-width: 650px; /* Limita el ancho del contenedor de botones */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.example-btn {
+  display: flex;
+  justify-content: space-between; /* Alinea el texto a la izquierda y el icono a la derecha */
+  align-items: center;
+  background: var(--card); /* Usa el color de fondo de las tarjetas */
+  padding: 18px 25px;
+  border-radius: var(--radius);
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border: 1px solid rgba(136, 136, 136, 0.1); /* Borde sutil */
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.example-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.example-btn span {
+  /* Estilo para el texto */
+}
+
+.example-btn img {
+  width: 20px; /* Tamaño del ícono de enlace */
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.example-btn:hover img {
+  filter: none; /* Desactiva el filtro en hover */
+}

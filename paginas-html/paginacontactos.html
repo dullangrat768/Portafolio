@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi pagina con Bootstrap</title>
+</head>
+
+<body>
+    <!--Contacto-->
+    <section id="contacto" class="py-5">
+        <div class="container">
+            <div class="col-md-8">
+                <form>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="asunto" class="form-label">Asunto</label>
+                        <input type="text" class="form-control" id="asunto" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                </form>
+            </div>
+            <script>
+                let nombre = "Jhansito";
+                const edad = 19;
+                let ciudad = "Bogota"
+                let hobby = "Me gusta Programar :)"
+                console.log("perfil:");
+                console.log("Nombre: " + nombre);
+                console.log("Edad: " + edad);
+                console.log("Ciudad: " + ciudad);
+                console.log("Hobby: " + hobby);
+            </script>
+        </div>
+    </section>
+</body>
+
+</html>
